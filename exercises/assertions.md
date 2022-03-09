@@ -19,3 +19,19 @@ Answer the following questions:
  - `assertEquals()` compare les valeurs 
  - `assertSame()`   compare les references 
  
+Scéanrio même résultat : 
+
+```java
+List<String> a = new List<>(); 
+List<String> b = a;
+assertEquals(a, b); //true
+assertSame(a, b); //true
+```
+
+Scénario résultat différent :
+```java
+int a = 2; 
+int b = 2;
+assertEquals(a, b); //true
+assertSame(a, b); //false
+```
