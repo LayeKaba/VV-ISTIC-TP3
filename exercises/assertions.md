@@ -45,3 +45,11 @@ public void test() {
     fail("test à completer");
 }
 ```
+
+4. `assertThrows` est plus utile car il permet de décrire précisement quels ligne de donne va throw quelle exception. 
+Par exemple : 
+```java
+assertThrows(IndexOutOfBoundsException.class, () -> {   List<String> l = new ArrayList<String>(); 
+                                                        l.get(1);
+                                                     });
+```
