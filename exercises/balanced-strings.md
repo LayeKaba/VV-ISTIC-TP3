@@ -26,3 +26,20 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 
+ 1. Pour nos blocs de tests, nous sommes partis des cas qui sont positifs, des cas incorrects et des cas avec des catracteres alphanumeriques et des symboles.
+   - Des chaines  (avec ou sans symboles)
+   - Des chaines debutant par des symboles fermant
+   - des cas avec uniquement des symboles fermant
+   - des cas avec des symboles et des caracteres alphanumeriques
+  
+ 2. Nous pensons avoir touché tous les cas  
+ 3. Nous n'avons pas de predicats avec plus de deux orepateurs booleens
+ 4. Les Statistiques  de PIT donne   
+ ```
+ - Statistics
+================================================================================
+ Generated 11 mutations Killed 11 (100%)
+ Ran 16 tests (1.45 tests per mutation)
+ ```
+ 
+
