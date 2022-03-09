@@ -12,6 +12,7 @@ Answer the following questions:
 
 
 ## Answer
+
 1. L'assertion est echoue car  l'un des deux membres de l'assertion est un flotant et l'a. pour palier à ce probleme.  
     on peut resoudre ce souci en ajoutant un troisieme parametre  pour dire l'ecart accepté entre les deux nombres (un Delta) lors d'un assertEqual: `assertEquals(3 * .4 , 1.2, 0.00001)`.
 
@@ -34,4 +35,13 @@ int a = 2;
 int b = 2;
 assertEquals(a, b); //true
 assertSame(a, b); //false
+```
+
+3. La méthode `fail()` de JUnit peut être utilisée si le test n'est pas complet.  
+Par exemple :  
+```java
+@Test
+public void test() {
+    fail("test à completer");
+}
 ```
