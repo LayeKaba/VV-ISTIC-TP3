@@ -10,4 +10,12 @@ Answer the following questions:
 
 4. In JUnit 4, an exception was expected using the `@Test` annotation, while in JUnit 5 there is a special assertion method `assertThrows`. In your opinion, what are the advantages of this new way of checking expected exceptions?
 
+
 ## Answer
+1. L'assertion est echoue car  l'un des deux membres de l'assertion est un flotant et l'a. pour palier à ce probleme.  
+    on peut resoudre ce souci en ajoutant un troisieme parametre  pour dire l'ecart accepté entre les deux nombres (un Delta) lors d'un assertEqual: `assertEquals(3 * .4 , 1.2, 0.00001)`.
+
+2. La difference est que 
+ - `assertEquals()` compare les valeurs 
+ - `assertSame()`   compare les references 
+ 
