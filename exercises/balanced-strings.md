@@ -42,4 +42,56 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
  Ran 16 tests (1.45 tests per mutation)
  ```
  
+ Résulats complets : 
+ 
+ ```
+ 18:00:08 PIT >> INFO : MINION : 18:00:08 PIT >> INFO : Checking environment
+
+18:00:08 PIT >> INFO : MINION : 18:00:08 PIT >> INFO : Found  3 tests
+
+18:00:08 PIT >> INFO : MINION : 18:00:08 PIT >> INFO : Dependency analysis reduced number of potential tests by 0
+
+18:00:08 PIT >> INFO : MINION : 18:00:08 PIT >> INFO : 3 tests received
+
+18:00:08 PIT >> INFO : Calculated coverage in 0 seconds.
+18:00:08 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+18:00:08 PIT >> INFO : Created  1 mutation test units
+18:00:09 PIT >> INFO : Completed in 1 seconds                                                                                                                     /================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+>> Generated 4 Killed 4 (100%)
+> KILLED 4 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 6 Killed 6 (100%)
+> KILLED 6 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : < 1 second
+--------------------------------------------------------------------------------
+> Total  : 1 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Generated 11 mutations Killed 11 (100%)
+>> Ran 16 tests (1.45 tests per mutation)
+ ```
+ 
 
