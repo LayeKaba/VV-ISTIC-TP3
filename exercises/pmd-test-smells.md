@@ -15,7 +15,10 @@ Include the improved test code in this file.
 
 ## Answer
 
-commande : `$ ./bin/run.sh pmd -d ../commons-lang/ -R category/java/bestpractices.xml/UseAssertEqualsInsteadOfAssertTrue`
-résultat : `commons-lang/src/test/java/org/apache/commons/lang3/AnnotationUtilsTest.java:413:	UseAssertEqualsInsteadOfAssertTrue:	Use assertEquals(x, y) instead of assertTrue(x.equals(y))`
-code détécté : `assertTrue(AnnotationUtils.equals(field1.getAnnotation(TestAnnotation.class), field2.getAnnotation(TestAnnotation.class)));`
+commande : `$ ./bin/run.sh pmd -d ../commons-lang/ -R category/java/bestpractices.xml/UseAssertEqualsInsteadOfAssertTrue`  
+
+résultat : `commons-lang/src/test/java/org/apache/commons/lang3/AnnotationUtilsTest.java:413:	UseAssertEqualsInsteadOfAssertTrue:	Use assertEquals(x, y) instead of assertTrue(x.equals(y))`  
+
+code détécté : `assertTrue(AnnotationUtils.equals(field1.getAnnotation(TestAnnotation.class), field2.getAnnotation(TestAnnotation.class)));`  
+
 correction : `assertEquals(true, AnnotationUtils.equals(field1.getAnnotation(TestAnnotation.class), field2.getAnnotation(TestAnnotation.class)));`
